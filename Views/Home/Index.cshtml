@@ -1,0 +1,190 @@
+﻿@model Interesse
+@{
+    ViewData["Title"] = "Hotsite";
+}
+<div class="row">
+    <div class="col-5">
+        <h2>Iniciativa Saúde da Cidade</h2>
+        <p>
+            Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos
+            at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Lorem ipsum
+            dolor sit amet et delectus accommodare his consul copiosae legendos
+            at vix ad putent delectus delicata usu.
+        </p>
+        <p>
+            Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos
+            at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+        </p>
+    </div>
+
+    <div class="col-7 mb-3">
+        <img src="https://services.meteored.com/img/article/inteligencia-artificial-aprende-a-reconstruir-imagens-vistas-por-pessoas-ciencia-fotos-1679175318563_1024.jpg"
+            style="width: 100%;">
+    </div>
+</div>
+<div class="row">
+    <div class="col-5 border border-secondary">
+        <h2>Entre em contato!:</h2>
+        <p>Nos mande uma mensagem e fique por dentro de nossos eventos</p>
+
+        <form id="formCadastro" method="POST">
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label mr-1">Nome:</label>
+                <div class="col-sm-6">
+                    <input asp-for="Nome" id="idNome" placeholder="Nome" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label mr-1">E-mail:</label>
+                <div class="col-sm-6">
+                    <input asp-for="Email" id="idEmail" placeholder="E-mail" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label mr-1">Mensagem <br />(opcional):</label>
+                <div class="col-sm-6">
+                    <textarea asp-for="Mensagem" id="idMensagem" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-8" style="text-align: right;">
+                    <button type="submit" id="idBotao" class="btn btn-outline-dark">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <figure class="col-2 mx-auto text-center">
+        <img src="https://leadlovers.blog/wp-content/uploads/sites/6/2017/10/dicas-simples-construtor-de-p%C3%A1ginas-640x452.jpg"
+            alt="" style="width:100%">
+        <figcaption><a href="#" data-toggle="modal" data-target="#idAgenda" class="text-dark p-1 mt-2">Agenda de eventos</a></figcaption>
+    </figure>
+
+    <figure class="col-2 mx-auto text-center">
+        <img src="https://leadlovers.blog/wp-content/uploads/sites/6/2017/10/dicas-simples-construtor-de-p%C3%A1ginas-640x452.jpg"
+            alt="" style="width:100%">
+        <figcaption><a href="#" data-toggle="modal" data-target="#idDicas" class="text-dark p-1 mt-2">Dicas de vida saudável</a>
+        </figcaption>
+    </figure>
+
+    <figure class="col-2 mx-auto text-center">
+        <img src="https://leadlovers.blog/wp-content/uploads/sites/6/2017/10/dicas-simples-construtor-de-p%C3%A1ginas-640x452.jpg"
+            alt="" style="width:100%">
+        <figcaption><a href="#" data-toggle="modal" data-target="#idApoiadores" class="text-dark p-1 mt-2">Apoiadores</a></figcaption>
+    </figure>
+
+    <div class="col-6">
+
+        <!-- Modal -->
+        <div class="modal fade" id="idAgenda" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-center">
+                        <h1 class="modal-title" id="exampleModalLabel">Agenda</h1>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center">
+                        <div style="font-size: 0.9em; width: 70%;">
+                            <h4>10/10/10 10:10 - Evento 1</h4>
+                            <p>Lorem ipsum dolor sit amet et delectus accommodare his
+                                consul copiosae legendos
+                                at vix ad putent delectus delicata usu.</p>
+
+                            <h4>10/10/10 10:10 - Evento 1</h4>
+                            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos
+                                at vix ad putent delectus delicata usu.</p>
+
+                            <h4>10/10/10 10:10 - Evento 1</h4>
+                            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos
+                                at vix ad putent delectus delicata usu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="idDicas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-center">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Dicas de vida saudável</h1>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center">
+                        <div style="font-size: 0.9em; width: 70%;">
+                            <p>Lorem ipsum dolor sit amet et delectus accommodare his
+                                consul copiosae legendos
+                                at vix ad putent delectus delicata usu. Lorem ipsum dolor sit amet et delectus
+                                accommodare his consul copiosae legendos
+                                at vix ad putent delectus delicata usu. Lorem ipsum dolor sit amet et delectus
+                                accommodare his consul copiosae legendos
+                                at vix ad putent delectus delicata usu.</p>
+
+                            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos
+                                at vix ad putent delectus delicata usu. Lorem ipsum dolor sit amet et delectus
+                                accommodare his consul copiosae legendos
+                                at vix ad putent delectus delicata usu.</p>
+
+                            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos
+                                at vix ad putent delectus delicata usu. Lorem ipsum dolor sit amet et delectus
+                                accommodare his consul copiosae legendos
+                                at vix ad putent delectus delicata usu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="idApoiadores" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-center">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Apoiadores</h1>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center">
+                        <div style="width: 80%;">
+                            <div class="d-flex">
+                                <img
+                                    src="https://png.pngtree.com/png-vector/20190926/ourmid/pngtree-building-icon-isolated-on-abstract-background-png-image_1743000.jpg"
+                                    alt="" style="width: 35%;">
+                                </img>
+                                <div class="align-self-center">
+                                    <h5>Empresa 1</h5>
+                                    <p class="small">descrição</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <img
+                                    src="https://png.pngtree.com/png-vector/20190926/ourmid/pngtree-building-icon-isolated-on-abstract-background-png-image_1743000.jpg"
+                                    alt="" style="width: 35%;">
+                                </img>
+                                <div class="align-self-center">
+                                    <h5>Empresa 2</h5>
+                                    <p class="small">descrição</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <img
+                                    src="https://png.pngtree.com/png-vector/20190926/ourmid/pngtree-building-icon-isolated-on-abstract-background-png-image_1743000.jpg"
+                                    alt="" style="width: 35%;">
+                                </img>
+                                <div class="align-self-center">
+                                    <h5>Empresa 3</h5>
+                                    <p class="small">descrição</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <img
+                                    src="https://png.pngtree.com/png-vector/20190926/ourmid/pngtree-building-icon-isolated-on-abstract-background-png-image_1743000.jpg"
+                                    alt="" style="width: 35%;">
+                                </img>
+                                <div class="align-self-center">
+                                    <h5>Empresa 4</h5>
+                                    <p class="small">descrição</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
